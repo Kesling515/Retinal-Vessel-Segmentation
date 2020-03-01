@@ -4,7 +4,7 @@
 #     - Define the neural network model                     #
 #     - Define the training                                 #
 #     - Define the prediction                               #
-#     - Model name: res_unet                                #
+#     - Model name: Residual Unet                           #
 #                                                           #
 #===========================================================#
 
@@ -103,7 +103,7 @@ class Generator():
             yield np.array(list_images), np.array(list_gt)
 
 
-# 定义网络模型：res_unet
+# 定义网络模型：Residual Unet
 def get_res_unet(minimum_kernel=32, do=0, size=64, activation=ReLU):
     # encoding path
     inputs = Input((size, size, 1))

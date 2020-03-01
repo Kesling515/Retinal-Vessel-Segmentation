@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../脊柱分割/3D-brain-segmentation-master/.idea/3D-brain-segmentation-master.iml" filepath="$PROJECT_DIR$/../../脊柱分割/3D-brain-segmentation-master/.idea/3D-brain-segmentation-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../IterNet/.idea/IterNet.iml" filepath="$PROJECT_DIR$/../../../IterNet/.idea/IterNet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../视网膜血管分割/Image_Segmentation-master/.idea/Image_Segmentation-master.iml" filepath="$PROJECT_DIR$/../../视网膜血管分割/Image_Segmentation-master/.idea/Image_Segmentation-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../视网膜血管分割/IterNet/.idea/IterNet.iml" filepath="$PROJECT_DIR$/../../视网膜血管分割/IterNet/.idea/IterNet.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Retinal-Vessel-Segmentation.iml" filepath="$PROJECT_DIR$/.idea/Retinal-Vessel-Segmentation.iml" />
       <module fileurl="file://$PROJECT_DIR$/../test/.idea/test.iml" filepath="$PROJECT_DIR$/../test/.idea/test.iml" />
     </modules>

@@ -7,6 +7,8 @@
     <orderEntry type="module" module-name="test" />
     <orderEntry type="module" module-name="3D-brain-segmentation-master" />
     <orderEntry type="module" module-name="IterNet" />
+    <orderEntry type="module" module-name="IterNet" />
+    <orderEntry type="module" module-name="Image_Segmentation-master" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="renderExternalDocumentation" value="true" />

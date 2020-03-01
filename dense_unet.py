@@ -4,7 +4,7 @@
 #     - Define the neural network model                     #
 #     - Define the training                                 #
 #     - Define the prediction                               #
-#     - Model name: dense_unet                                    #
+#     - Model name: Dense Unet                              #
 #                                                           #
 #===========================================================#
 
@@ -103,7 +103,7 @@ class Generator():
             yield np.array(list_images), np.array(list_gt)
 
 
-# 定义网络模型：dense_unet
+# 定义网络模型：Dense Unet
 def get_dense_unet(minimum_kernel=32, do=0, size=64, activation=ReLU):
     # encoding path
     inputs = Input((size, size, 1))
