@@ -149,7 +149,7 @@ def get_unet(minimum_kernel=32, do=0, size=64, activation=ReLU):
     conv10 = Conv2D(1, (1, 1), activation='sigmoid', name='final_out')(conv9)
 
     model = Model(inputs=[inputs], outputs=[conv10])
-    # model.summary()
+    model.summary()
 
     model.compile(optimizer=Adam(lr=1e-3), loss='binary_crossentropy', metrics=['accuracy'])
 
@@ -204,7 +204,7 @@ def train(DATASET="DRIVE", crop_size=64, need_au=True, ACTIVATION='ReLU', dropou
     data_generator = Generator(batch_size, repeat, DATASET)
     history = model.fit_generator(data_generator.gen(au=need_au, crop_size=crop_size),
                                   epochs=epochs, verbose=1,
-                                  steps_per_epoch=50 * data_generator.n // batch_size,
+                                  steps_per_epoch=1000 * data_generator.n // batch_size,
                                   use_multiprocessing=False, workers=0,
                                   callbacks=[tensorboard, checkpoint])
 

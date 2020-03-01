@@ -214,7 +214,7 @@ def train(DATASET="DRIVE", crop_size=64, need_au=True, ACTIVATION='ReLU', dropou
     data_generator = Generator(batch_size, repeat, DATASET)
     history = model.fit_generator(data_generator.gen(au=need_au, crop_size=crop_size),
                                   epochs=epochs, verbose=1,
-                                  steps_per_epoch=50 * data_generator.n // batch_size,
+                                  steps_per_epoch=1000 * data_generator.n // batch_size,
                                   use_multiprocessing=False, workers=0,
                                   callbacks=[tensorboard, checkpoint])
 
